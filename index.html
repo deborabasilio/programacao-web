@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style type="text/css">
+        label {
+            display: block;
+            margin-top: 20px;
+        }
+    </style>
+    <title>Disciplina</title>
+</head>
+    <body>
+        
+        <h1 align="center"><b>Disciplina</b></h1>
+
+        <form method = "post" action = "receber.php">
+            <fieldset>
+            <label for="nome"><b>Nome</b></label><br/>
+            <input type="text" name="nome"id="nome" />
+                
+
+            <label for="curso"><b>Curso</b></label><br/>
+            <input type="text" name="curso" id="curso" />
+                
+
+            <label for="cargaH"><b>Carga Horária</b></label><br/>
+            <input type="number" name="cargaH" id="cargaH" />
+                
+                
+            <label for="ativos"><b>Ativos</b></label> 
+                <br/>
+            <input type="radio" id="ativos" name="ativos" value="true" />True
+                <br/>
+            <input type="radio" id="ativos" name="ativos" value="false" />False
+                
+
+            <label for="preco"><b>Preço</b></label><br/>
+            <input type="double" name="preco" id="preco" />
+               
+                
+            <label for="dataInicio"><b>Data de Início</b></label><br/>
+            <input type="date" name="dataInicio" id="dataInicio" />
+                
+
+            <label for="dataFim"><b>Data de Fim</b></label><br/>
+            <input type="date" name="dataFim" id="dataFim" />
+               
+            </fieldset>
+
+            <div>
+                <input type="submit" value="Enviar" />
+            </div>
+    </body>
+</html>
